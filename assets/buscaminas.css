@@ -1,10 +1,10 @@
 body{
   background-color: #50cace;
+  margin: 150px;
 }
 table{
   background-color: grey;
-  margin-top: 120px;
-  margin-left: 500px;
+
 }
 td{
   width: 30px;
@@ -23,5 +23,12 @@ input{
 .reiniciar{
   font-size: 20px;
   font-family: monospace;
-  
+
+}
+.num1{
+  font-size: 20px;
+}
+
+.num2{
+  font-size: 20px;
 }
