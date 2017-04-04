@@ -1,15 +1,15 @@
-var vacios = document.getElementsByClassName('vacio');
+var vacios= [];
+var vaciosLength = document.getElementsByClassName('vacio').length;
 
-
-for(var i = 0; i< vacios.length; i++){
+for(var i = 0; i< vaciosLength; i++){
+  vacios[i]= document.getElementsByClassName('vacio')[i];
+}
+for(var i = 0; i< vaciosLength; i++){
   vacios[i].addEventListener("click",espacioVacio);
 }
 function espacioVacio(){
-  for(var i = 0; i< vacios.length; i++){
-    console.log(i);
-    vacios[i].style.backgroundColor="black";
 
-  }
+    this.style.backgroundColor="white";
 
 }
 
@@ -21,6 +21,14 @@ function espacioVacio(){
     for(var i = 0; i< bomba.length; i++){
       console.log(i);
       bomba[i].setAttribute("value","💣");
-
+      bomba[i].style.backgroundColor="red";
+      bomba[i].disabled = true
     }
+    alert("Fin del juego");
+  }
+
+  var botonReinicio = document.getElementById('reiniciar');
+  botonReinicio.addEventListener("click", reiniciar);
+  function reiniciar(){
+    location.reload();
   }
