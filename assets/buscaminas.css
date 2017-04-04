@@ -1,0 +1,27 @@
+body{
+  background-color: #50cace;
+}
+table{
+  background-color: grey;
+  margin-top: 120px;
+  margin-left: 500px;
+}
+td{
+  width: 30px;
+  height: 30px;
+}
+input{
+  background-color: #b5bebf;
+  width: 30px;
+  height: 30px;
+}
+.texto{
+  background-color: white;
+  font-family: monospace;
+  font-size: 20px;
+}
+.reiniciar{
+  font-size: 20px;
+  font-family: monospace;
+  
+}
